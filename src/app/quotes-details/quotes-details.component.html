@@ -3,6 +3,8 @@
     <div class="col-md-12">
       <p>{{quote.description}}</p>
       <p>This quote was posted {{quote.completeDate| dateCount}} days ago</p>
+      <p>Posted by: {{quote.link}}</p>
+      <p>and has {{quote.vote}} points</p>
       <!-- <p>This goal will be completed in {{goal.completeDate|dateCount}} days</p> -->
       <button (click)='quoteComplete(true)'> DELETE </button>
 
