@@ -9,6 +9,7 @@ import { QuotesComponent } from "./quotes/quotes.component";
 import { QuotesDetailsComponent } from "./quotes-details/quotes-details.component";
 import { AddQuoteComponent } from "./add-quote/add-quote.component";
 import { ChangeBackGroundColorDirective } from './change-back-ground-color.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChangeBackGroundColorDirective } from './change-back-ground-color.direc
     QuotesComponent,
     QuotesDetailsComponent,
     AddQuoteComponent,
-    ChangeBackGroundColorDirective
+    ChangeBackGroundColorDirective,
+    DateCountPipe
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
