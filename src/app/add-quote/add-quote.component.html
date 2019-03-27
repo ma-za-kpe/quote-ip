@@ -37,30 +37,9 @@
 
       </div>
 
-      <div class="form-group">
 
-        <label for="name">Vote:</label>
-        <input type="text" required class="form-control" id="vote" [(ngModel)]="newQuote.vote" name="vote"
-          #name="ngModel" required>
 
-      </div>
 
-      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-        <p> vote is Required</p>
-
-      </div>
-
-      <div class="form-group">
-        <label for="complete">Completion</label>
-        <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel"
-          required>
-
-      </div>
-
-      <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-        <p> Complete Date is Required</p>
-
-      </div>
 
       <button type="Submit" class="btn btn-success btn-lg"> Add </button>
 

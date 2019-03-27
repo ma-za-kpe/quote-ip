@@ -15,49 +15,7 @@ export class QuotesComponent implements OnInit {
       "Maku",
       "Paul",
       "Solve math homework, I have to buy cookies for the parrot",
-      5,
-      new Date(2019, 5, 14)
-    ),
-    new Quote(
-      2,
-      "Maku",
-      "Paul",
-      "Solve math homework, I have to buy cookies for the parrot",
-      6,
-      new Date(2019, 3, 24)
-    ),
-    new Quote(
-      3,
-      "Maku",
-      "Paul",
-      "Solve math homework, I have to buy cookies for the parrot",
-      8,
-      new Date(2018, 3, 14)
-    ),
-    new Quote(
-      4,
-      "Maku",
-      "Paul",
-      "Solve math homework, I have to buy cookies for the parrot",
-      6,
-      new Date(2018, 3, 14)
-    ),
-    new Quote(
-      5,
-      "Maku",
-      "Paul",
-      "Solve math homework, I have to buy cookies for the parrot",
-
-      5,
-      new Date(2018, 3, 14)
-    ),
-    new Quote(
-      6,
-      "Maku",
-      "Paul",
-      "Solve math homework, I have to buy cookies for the parrot",
-      1,
-      new Date(2018, 3, 14)
+      0
     )
   ];
   constructor() {}

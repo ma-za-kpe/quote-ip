@@ -5,10 +5,9 @@ export class Quote {
     public name: string,
     public link: string,
     public description: string,
-    public vote: number,
-    public completeDate: Date
+    public vote: number
   ) {
-    this.vote = vote || 0;
+    this.vote = 0;
     this.showDescription = false;
   }
 
