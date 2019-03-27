@@ -1,0 +1,120 @@
+<div class="container" id="read">
+  <app-add-quote (addQuote)="addNewQuote($event)"></app-add-quote>
+  <hr>
+  <ul>
+    <div *ngFor="let quote of sortedQuotes(); let i = index">
+      <li id="highest" *ngIf="quote.vote >= max(), else lower" id="{{i}}" appChangeBackgroundColor>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <!-- Card -->
+              <div class="card card-cascade wider reverse">
+
+                <!-- Card content -->
+                <div class="card-body card-body-cascade text-center">
+
+                  <!-- Title -->
+                  <!-- <h4 class="card-title"><strong>My adventure</strong></h4> -->
+
+                  <!-- Text -->
+                  <p class=" description card-text"> "{{quote.description}}"
+                  </p>
+                  <!-- Subtitle -->
+                  <h6 class="font-weight-bold indigo-text py-2"> -- {{quote.name}}</h6>
+
+                  Posted by {{quote.link}} on
+      <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>05/10/2015</li>
+
+
+    </div>
+
+</div>
+<!-- Card -->
+</div>
+
+<div class="col-md-2 container">
+  <div class=" buttons row">
+    <div class="form-group">
+      <textarea id="points" class="form-control rounded-0" id="exampleFormControlTextarea2"
+        rows="1">{{ quote.vote }}</textarea>
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" (click)="voteUp(i)" class="btn btn-primary">UpVote <span>{{ quote.vote }}</span></button>
+  </div>
+  <div class="row">
+    <button type="button" (click)="voteDown(i)" class="btn btn-primary">DownVote <span>{{ quote.vote }}</span></button>
+  </div>
+  <div class="row">
+    <button type="button" (click)="toogleDetails(i)" class="btn btn-primary"> Details</button>
+  </div>
+</div>
+<!-- row end -->
+
+</div>
+</div>
+
+</li>
+<ng-template #lower>
+  <div class="container main">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Card -->
+        <div class="card card-cascade wider reverse">
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Title -->
+            <!-- <h4 class="card-title"><strong>My adventure</strong></h4> -->
+
+            <!-- Text -->
+            <p class="description card-text">{{quote.description}}
+            </p>
+            <!-- Subtitle -->
+            <h6 class="font-weight-bold indigo-text py-2"> -- {{quote.name}}</h6>
+
+            Posted by {{quote.link}} on
+            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>05/10/2015</li>
+
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+
+
+      <!-- row end -->
+
+    </div>
+    <div class="buttons row">
+      <div class="col-md-3">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3">{{ quote.vote }}</textarea>
+      </div>
+      <div class="col-md-3">
+        <button type="button" (click)="voteUp(i)" class="btn btn-primary">UpVote <span>{{ quote.vote }}</span></button>
+
+      </div>
+      <div class="col-md-3">
+        <button type="button" (click)="voteDown(i)" class="btn btn-primary">DownVote
+          <span>{{ quote.vote }}</span></button>
+
+      </div>
+      <div class="col-md-3">
+        <button type="button" (click)="toogleDetails(i)" class="btn btn-primary"> Details</button>
+
+      </div>
+    </div>
+
+  </div>
+
+</ng-template>
+
+<app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="completeQuote($event, i)">
+</app-quotes-details>
+</div>
+</ul>
+
+</div>
