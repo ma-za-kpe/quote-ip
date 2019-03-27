@@ -1,0 +1,31 @@
+#read,
+.card {
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: 100;
+  font-style: italic
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+textarea {
+  font-size: 28px;
+  height: 50px;
+}
+
+.main {
+  border: 2px solid rgba(153, 246, 255, 0.931);
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+span {
+  font-weight: 500;
+  font-size: 20px;
+}
