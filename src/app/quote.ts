@@ -5,13 +5,13 @@ export class Quote {
     public name: string,
     public link: string,
     public description: string,
-    public vote: number
+    public vote?: number
   ) {
     this.vote = 0;
     this.showDescription = false;
   }
 
-  voteUp() {
+  voteUp(): void {
     this.vote += 1;
   }
 }

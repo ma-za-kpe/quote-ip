@@ -33,7 +33,7 @@ export class QuotesComponent implements OnInit {
     return this.quotes.sort((a: Quote, b: Quote) => b.vote - a.vote);
   }
 
-  voteUp(index): void {
+  voteUp(index) {
     this.quotes[index].vote += 1;
   }
 

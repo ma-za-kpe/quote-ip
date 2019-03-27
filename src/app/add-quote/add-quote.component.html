@@ -5,7 +5,7 @@
 
         <label for="name">Description</label>
         <textarea type="text" required class="form-control" id="description" [(ngModel)]="newQuote.description"
-          name="description" #name="ngModel" required></textarea>
+          name="description" #name="ngModel"></textarea>
       </div>
 
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -16,7 +16,7 @@
 
         <label for="name">Name</label>
         <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
-          #name="ngModel" required>
+          #name="ngModel">
 
       </div>
 
@@ -28,7 +28,7 @@
 
         <label for="name">Posted by:</label>
         <input type="text" required class="form-control" id="link" [(ngModel)]="newQuote.link" name="link"
-          #name="ngModel" required>
+          #name="ngModel">
 
       </div>
 
@@ -36,11 +36,6 @@
         <p> Publisher is Required</p>
 
       </div>
-
-
-
-
-
       <button type="Submit" class="btn btn-success btn-lg"> Add </button>
 
     </form>
