@@ -15,7 +15,8 @@ export class QuotesComponent implements OnInit {
       "Maku",
       "Paul",
       "Solve math homework, I have to buy cookies for the parrot",
-      0
+      0,
+      new Date(2019, 3, 14)
     )
   ];
   constructor() {}
