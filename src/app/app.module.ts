@@ -8,6 +8,7 @@ import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { QuotesComponent } from "./quotes/quotes.component";
 import { QuotesDetailsComponent } from "./quotes-details/quotes-details.component";
 import { AddQuoteComponent } from "./add-quote/add-quote.component";
+import { ChangeBackGroundColorDirective } from './change-back-ground-color.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AddQuoteComponent } from "./add-quote/add-quote.component";
     NavBarComponent,
     QuotesComponent,
     QuotesDetailsComponent,
-    AddQuoteComponent
+    AddQuoteComponent,
+    ChangeBackGroundColorDirective
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
