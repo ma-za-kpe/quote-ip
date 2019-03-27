@@ -119,7 +119,8 @@
 
 </ng-template>
 
-<app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="completeQuote($event, i)">
+<app-quotes-details class="details" *ngIf="quote.showDescription" [quote]="quote"
+  (isComplete)="completeQuote($event, i)">
 </app-quotes-details>
 </div>
 </ul>

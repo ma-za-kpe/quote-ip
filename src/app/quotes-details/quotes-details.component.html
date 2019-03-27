@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container details">
   <div class="row">
     <div class="col-md-12">
       <p>{{quote.description}}</p>
@@ -6,7 +6,7 @@
       <p>Posted by: {{quote.link}}</p>
       <p>and has {{quote.vote}} points</p>
       <!-- <p>This goal will be completed in {{goal.completeDate|dateCount}} days</p> -->
-      <button (click)='quoteComplete(true)'> DELETE </button>
+      <button class="btn btn-danger" (click)='quoteComplete(true)'> DELETE </button>
 
     </div>
   </div>
